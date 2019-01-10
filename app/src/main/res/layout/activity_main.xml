@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/winter"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginBottom="24sp"
+        android:id="@+id/getWeatherTv"
+        android:fontFamily="cursive"
+        android:layout_marginTop="24sp"
+        android:textSize="50sp"
+        android:text="@string/get_weather"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="textCapSentences"
+        android:gravity="center"
+        android:id="@+id/cityEt"
+        android:layout_margin="24sp"
+        android:layout_below="@id/getWeatherTv"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/insert_your_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@drawable/ripple"
+        android:id="@+id/button"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:text="GET THAT"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:fontFamily="cursive"
+        android:textSize="36sp"
+        android:id="@+id/mainTv"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="invisible"
+        android:text="@string/grados"
+        android:fontFamily="cursive"
+        android:textSize="36sp"
+        android:id="@+id/tempTv"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mainTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+
+
+
